@@ -20,6 +20,14 @@ const (
                 "repetition_delimiter": { "type": "string", "minLength": 1 },
                 "release_character": { "type": "string", "minLength": 1 },
                 "ignore_crlf": { "type": "boolean" },
+                "envelope": {
+                    "type": "object",
+                    "properties": {
+                        "validate_control_codes": { "type": "boolean", "$comment": "default true; validate ISA13==IEA02, GS06==GE02, ST02==SE02" },
+                        "output_identity": { "type": "boolean", "$comment": "default true; emit stable partner/transaction identity in each target record" }
+                    },
+                    "additionalProperties": false
+                },
                 "segment_declarations": {
                     "type": "array",
                     "items": {

@@ -36,6 +36,14 @@ type ediReader struct {
 	target            *idr.Node
 	targetXPath       *xpath.Expr
 	unprocessedRawSeg RawSeg
+	envelope          envelopeTracker
+	// targetIdentity is the envelope identity captured when the current target instance
+	// started; it is attached to the target node when the target is emitted.
+	targetIdentity *envelopeIdentity
+	// envelopeErrs queues envelope control number mismatches. They are reported on subsequent
+	// Read() calls (after the current target, if any, has been yielded), so a mismatched
+	// trailer doesn't make the reader drop an otherwise usable record.
+	envelopeErrs []error
 }
 
 func inRange(i, lowerBoundInclusive, upperBoundInclusive int) bool {
@@ -92,6 +100,20 @@ func (r *ediReader) getUnprocessedRawSeg() (RawSeg, error) {
 		return RawSeg{}, io.EOF
 	case err != nil:
 		return RawSeg{}, ErrInvalidEDI(r.fmtErrStr(err.Error()))
+	}
+	// Track the envelope for every raw segment as it is read, regardless of whether the schema
+	// declares it: control code pairing is a property of the input, not of the schema. A
+	// mismatch is remembered and reported on a later Read() call, so a record contained in the
+	// mismatched envelope is still yielded before the error.
+	err = r.envelope.track(rawSeg, r.r.SegCount(), r.r.RuneBegin(), r.r.RuneEnd())
+	if err != nil {
+		// Deliberately NOT an ErrInvalidEDI: an envelope control number mismatch is a
+		// continuable error, so a genuinely different transaction following the bad envelope
+		// still gets ingested instead of being swallowed by an early abort.
+		// Both ends of the pairing (with their own segment numbers/positions and values) are
+		// already spelled out in err; only prepend the input name.
+		r.envelopeErrs = append(r.envelopeErrs,
+			fmt.Errorf("input '%s': %s", r.inputName, err.Error()))
 	}
 	r.unprocessedRawSeg = rawSeg
 	r.unprocessedRawSeg.valid = true
@@ -153,8 +175,18 @@ func (r *ediReader) segDone() {
 			panic("cur.segNode == nil")
 		}
 		if r.targetXPath == nil || idr.MatchAny(cur.segNode, r.targetXPath) {
+			// Attach the envelope identity captured when this target instance started, so
+			// every emitted record carries a stable partner/transaction identity (which in
+			// turn participates in RawRecord.Checksum()). A target that starts before the
+			// transaction set (e.g. it wraps a whole group of transactions) has no single
+			// transaction identity, so nothing is attached.
+			if r.targetIdentity != nil {
+				r.targetIdentity.addTo(cur.segNode)
+			}
+			r.targetIdentity = nil
 			r.target = cur.segNode
 		} else {
+			r.targetIdentity = nil
 			idr.RemoveAndReleaseTree(cur.segNode)
 			cur.segNode = nil
 		}
@@ -213,6 +245,14 @@ func (r *ediReader) Read() (*idr.Node, error) {
 		if r.target != nil {
 			return r.target, nil
 		}
+		if len(r.envelopeErrs) > 0 {
+			// Report an envelope control code mismatch only after any target contained in the
+			// mismatched envelope has been yielded. The error is a continuable one (it is not
+			// ErrInvalidEDI), so ingestion of subsequent envelopes/transactions can proceed.
+			err := r.envelopeErrs[0]
+			r.envelopeErrs = r.envelopeErrs[1:]
+			return nil, err
+		}
 		rawSeg, err := r.getUnprocessedRawSeg()
 		if err == io.EOF {
 			// When the input is done, we still need to verified all the
@@ -256,6 +296,13 @@ func (r *ediReader) Read() (*idr.Node, error) {
 			r.resetRawSeg()
 		} else {
 			cur.segNode = idr.CreateNode(idr.ElementNode, cur.segDecl.Name)
+		}
+		if cur.segDecl.IsTarget {
+			// Capture the envelope identity at the point this target instance starts.
+			r.targetIdentity = nil
+			if identity, ok := r.envelope.identity(); ok {
+				r.targetIdentity = &identity
+			}
 		}
 		if len(r.stack) > 1 {
 			idr.AddChild(r.stackTop(1).segNode, cur.segNode)
@@ -315,13 +362,15 @@ func NewReader(inputName string, r io.Reader, decl *FileDecl, targetXPath string
 	if err != nil {
 		return nil, fmt.Errorf("invalid target xpath '%s', err: %s", targetXPath, err.Error())
 	}
+	releaseChar := newStrPtrByte(decl.ReleaseChar)
 	reader := &ediReader{
 		inputName:         inputName,
 		r:                 NewNonValidatingReader(r, decl),
-		releaseChar:       newStrPtrByte(decl.ReleaseChar),
+		releaseChar:       releaseChar,
 		stack:             newStack(),
 		targetXPath:       targetXPathExpr,
 		unprocessedRawSeg: newRawSeg(),
+		envelope:          newEnvelopeTracker(decl.Envelope, releaseChar.b),
 	}
 	reader.growStack(stackEntry{
 		segDecl: &SegDecl{

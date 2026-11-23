@@ -11,6 +11,7 @@
     * [Step: FINAL\_OUTPUT\.parties\.address](#step-final_outputpartiesaddress)
     * [Step: FINAL\_OUTPUT\.line\_items\.measurement\.quantity](#step-final_outputline_itemsmeasurementquantity)
     * [Step: FINAL\_OUTPUT\.line\_items\.consignees\.packages\.weight](#step-final_outputline_itemsconsigneespackagesweight)
+  * [Envelope Control Codes and Record Identity](#envelope-control-codes-and-record-identity)
   * [Segment Ambiguity](#segment-ambiguity)
 
 # EDI Schema in Depth
@@ -685,6 +686,96 @@ And have the `weight` field transform be:
 This way, if `CD3/weight` is not specified in the input, the script will return empty string causing
 omniparser to omit the `weight` field from the output; the value is present in the input, then we will
 do float parsing and return the result as type-casted float value.
+
+## Envelope Control Codes and Record Identity
+
+X12 EDI documents are wrapped in nested envelopes, and each envelope level repeats its control
+number in the header and in the trailer segment:
+
+| Level       | Header | Trailer | Control number pairing |
+|-------------|--------|---------|------------------------|
+| interchange | `ISA`  | `IEA`   | `ISA13` == `IEA02`     |
+| group       | `GS`   | `GE`    | `GS06`  == `GE02`      |
+| transaction | `ST`   | `SE`    | `ST02`  == `SE02`      |
+
+omniparser enables two related behaviors by default. Both can be turned off in
+`file_declaration.envelope`:
+
+```
+"file_declaration": {
+    ...
+    "envelope": {
+        "validate_control_codes": true,
+        "output_identity": true
+    },
+    "segment_declarations": [ ... ]
+}
+```
+
+### `validate_control_codes` (default `true`)
+
+Every raw segment read from the input is tracked, whether or not the schema declares that
+segment, so header/trailer pairing is checked purely against the input. When a trailer segment
+closes a level whose control number doesn't pair with the corresponding header, ingestion reports
+the mismatch *with both ends*, including their segment numbers, character positions and values:
+
+```
+input 'xxx.edi': transaction set control number mismatch: segment 'ST' at segment no.3 (char[107,162]) has control number '000000001'; segment 'SE' at segment no.7 (char[233,249]) has control number '000000002'
+```
+
+Notes:
+
+- Leading zeros are not significant when both control numbers are purely numeric (`ISA13`
+  `000001644` and `IEA02` `1644` are considered the same control number, as some partners
+  shorten the trailer value).
+- If only one of the two ends carries a control number (common in partial/simplified test
+  input), no mismatch is reported.
+- The mismatch is reported as a *continuable* error: records already fully read from the
+  mismatched envelope are still returned first, and ingestion continues afterwards, so a
+  genuinely different transaction following a corrupt envelope is not swallowed.
+- Only X12 segment names (`ISA`/`IEA`, `GS`/`GE`, `ST`/`SE`) are recognized. Other EDI flavors
+  (for example EDIFACT `UNB`/`UNZ`, `UNH`/`UNT`) are unaffected.
+
+### `output_identity` (default `true`)
+
+Suppliers sometimes reuse an interchange control number (`ISA13`) for different deliveries with
+different dates/times. If a downstream target de-duplicates on the interchange control number
+alone, a genuinely different transaction would be dropped. To make a stable, collision-free
+identity available, every target record that belongs to a transaction set (`ST` .. `SE`) gets a
+synthetic `__envelope` element (similar in spirit to the `__debug` element of the `csv2` reader):
+
+```
+"__envelope": {
+    "partner_id": "sender=02:CPC|receiver=ZZ:00602679321",
+    "transaction_id": "isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000001",
+    "partner": {
+        "sender_qualifier": "02", "sender_id": "CPC",
+        "receiver_qualifier": "ZZ", "receiver_id": "00602679321"
+    },
+    "interchange": { "control_number": "000001644", "date": "191103", "time": "1800" },
+    "group":       { "control_number": "000001644", "date": "20191103", "time": "1800" },
+    "transaction": { "type": "214", "control_number": "000000001" }
+}
+```
+
+- `partner_id` is the stable trading partner identity, built from the interchange sender and
+  receiver (`ISA05`/`ISA06`/`ISA07`/`ISA08`).
+- `transaction_id` is the stable transaction identity, built from the interchange control number
+  *and delivery date/time*, the group control number *and date/time*, and the transaction set
+  type and control number. Repeating an interchange control number with a different delivery time
+  therefore produces a different `transaction_id`.
+- The element is part of the raw record's IDR node, so `Transform.RawRecord().Checksum()` (a hash
+  of the raw record) also changes whenever the envelope identity changes. Downstream
+  de-duplication keyed on the checksum (or on `transaction_id`) will not collapse two genuinely
+  different transactions.
+- The element is addressable via XPath (for example `__envelope/transaction_id`) if you want to
+  surface it in `FINAL_OUTPUT`; the `__` prefix keeps it out of the way of real X12 segment names.
+- A target that starts before the transaction set (for example a segment group wrapping whole
+  transactions) has no single transaction identity, so no `__envelope` element is attached to it.
+
+Note `output_identity` controls only the synthetic element. The identity values themselves are
+captured independently of `validate_control_codes`, so validation can be turned off while still
+emitting identity, and vice versa.
 
 ## Segment Ambiguity
 The most difficult part of authoring an EDI schema is to declare the segment/segment_group structure

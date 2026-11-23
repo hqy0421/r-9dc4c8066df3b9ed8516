@@ -1,7 +1,7 @@
 [
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"XB\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1534\",\"timeCode\":\"\"},\"AT8\":{\"weight\":\"4\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638097845589              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"provinceCode\":\"ON\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"HAMMER\",\"countryCode\":\"CA\",\"postalCode\":\"T0C1Z0\",\"provinceCode\":\"AB\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "036f404f-6eef-3236-9f8e-3bdffa088821",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"XB\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1534\",\"timeCode\":\"\"},\"AT8\":{\"weight\":\"4\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638097845589              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"provinceCode\":\"ON\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"HAMMER\",\"countryCode\":\"CA\",\"postalCode\":\"T0C1Z0\",\"provinceCode\":\"AB\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000001\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000001\"}}",
+		"RawRecordHash": "efc626a3-1631-36fd-96dd-aced9decd016",
 		"TransformedRecord": {
 			"dest": {
 				"city": "HAMMER",
@@ -26,8 +26,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191102\",\"shipmentStatusCode\":\"AH\",\"shipmentStatusReasonCode\":\"AG\",\"time\":\"1625\",\"timeCode\":\"PT\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098050296              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"DRILL\",\"countryCode\":\"CA\",\"provinceCode\":\"BC\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"DRILL\",\"countryCode\":\"CA\",\"postalCode\":\"V5L0B3\",\"provinceCode\":\"BC\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "1f11b977-8fbe-3fe3-8d1a-9667a4d38273",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191102\",\"shipmentStatusCode\":\"AH\",\"shipmentStatusReasonCode\":\"AG\",\"time\":\"1625\",\"timeCode\":\"PT\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098050296              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"DRILL\",\"countryCode\":\"CA\",\"provinceCode\":\"BC\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"DRILL\",\"countryCode\":\"CA\",\"postalCode\":\"V5L0B3\",\"provinceCode\":\"BC\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000002\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000002\"}}",
+		"RawRecordHash": "879ab8b4-442f-31a5-a901-5c072befe03a",
 		"TransformedRecord": {
 			"dest": {
 				"city": "DRILL",
@@ -52,8 +52,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191102\",\"shipmentStatusCode\":\"CA\",\"shipmentStatusReasonCode\":\"BT\",\"time\":\"1752\",\"timeCode\":\"PT\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638931638575              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"SAW\",\"countryCode\":\"CA\",\"provinceCode\":\"BC\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"postalCode\":\"N5Y5W3\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "e01b006e-fe9b-3af7-8a47-21b1a0dc1536",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191102\",\"shipmentStatusCode\":\"CA\",\"shipmentStatusReasonCode\":\"BT\",\"time\":\"1752\",\"timeCode\":\"PT\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638931638575              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"SAW\",\"countryCode\":\"CA\",\"provinceCode\":\"BC\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"postalCode\":\"N5Y5W3\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000003\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000003\"}}",
+		"RawRecordHash": "c8cba4dd-8c53-3989-89e2-96922306f1b4",
 		"TransformedRecord": {
 			"dest": {
 				"city": "WRENCH",
@@ -78,8 +78,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191102\",\"shipmentStatusCode\":\"D1\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1648\",\"timeCode\":\"MT\"},\"AT8\":{\"weight\":\"15\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098146166              \"},\"L11\":[{},{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"SWITCH\",\"countryCode\":\"CA\",\"provinceCode\":\"AB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"SWITCH\",\"countryCode\":\"CA\",\"postalCode\":\"T0C0J0\",\"provinceCode\":\"AB\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "32165f22-a5fc-3531-a7db-48b52a9d55b6",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191102\",\"shipmentStatusCode\":\"D1\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1648\",\"timeCode\":\"MT\"},\"AT8\":{\"weight\":\"15\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098146166              \"},\"L11\":[{},{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"SWITCH\",\"countryCode\":\"CA\",\"provinceCode\":\"AB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"SWITCH\",\"countryCode\":\"CA\",\"postalCode\":\"T0C0J0\",\"provinceCode\":\"AB\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000004\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000004\"}}",
+		"RawRecordHash": "1e21a20e-9bf1-3a1c-ad1f-8d81cadbc0c6",
 		"TransformedRecord": {
 			"dest": {
 				"city": "SWITCH",
@@ -104,8 +104,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AF\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1509\",\"timeCode\":\"CS\"},\"AT8\":{\"weight\":\"1\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098181877              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"PAINTBRUSH\",\"countryCode\":\"CA\",\"provinceCode\":\"MB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"SCREWDRIVER\",\"countryCode\":\"CA\",\"postalCode\":\"S0M0E0\",\"provinceCode\":\"SK\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "1a645e5e-4fa3-3d7d-bbae-3b3930862a2c",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AF\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1509\",\"timeCode\":\"CS\"},\"AT8\":{\"weight\":\"1\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098181877              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"PAINTBRUSH\",\"countryCode\":\"CA\",\"provinceCode\":\"MB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"SCREWDRIVER\",\"countryCode\":\"CA\",\"postalCode\":\"S0M0E0\",\"provinceCode\":\"SK\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000005\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000005\"}}",
+		"RawRecordHash": "dc9a0d06-7aff-3dd3-afda-9d68c0543d2a",
 		"TransformedRecord": {
 			"dest": {
 				"city": "SCREWDRIVER",
@@ -130,8 +130,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AF\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1509\",\"timeCode\":\"CS\"},\"AT8\":{\"weight\":\"19\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098181891              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"PAINTBRUSH\",\"countryCode\":\"CA\",\"provinceCode\":\"MB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"MITERSAW\",\"countryCode\":\"CA\",\"postalCode\":\"S0M1C0\",\"provinceCode\":\"SK\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "7dd51926-28f5-391d-aab7-a6d93c5f7c9a",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AF\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1509\",\"timeCode\":\"CS\"},\"AT8\":{\"weight\":\"19\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098181891              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"PAINTBRUSH\",\"countryCode\":\"CA\",\"provinceCode\":\"MB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"MITERSAW\",\"countryCode\":\"CA\",\"postalCode\":\"S0M1C0\",\"provinceCode\":\"SK\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000006\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000006\"}}",
+		"RawRecordHash": "e47eca29-c73b-350b-934b-eb48df1331e6",
 		"TransformedRecord": {
 			"dest": {
 				"city": "MITERSAW",
@@ -156,8 +156,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"XB\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1131\",\"timeCode\":\"CS\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098181921              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"PAINTBRUSH\",\"countryCode\":\"CA\",\"provinceCode\":\"MB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WETVAC\",\"countryCode\":\"CA\",\"postalCode\":\"R0A1E0\",\"provinceCode\":\"MB\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "a708ed5a-e245-3c3d-8092-a47a62a75840",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"XB\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1131\",\"timeCode\":\"CS\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098181921              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"PAINTBRUSH\",\"countryCode\":\"CA\",\"provinceCode\":\"MB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WETVAC\",\"countryCode\":\"CA\",\"postalCode\":\"R0A1E0\",\"provinceCode\":\"MB\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000007\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000007\"}}",
+		"RawRecordHash": "e1eecb76-3780-35a4-87e3-12f5ab45b807",
 		"TransformedRecord": {
 			"dest": {
 				"city": "WETVAC",
@@ -182,8 +182,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AF\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1509\",\"timeCode\":\"CS\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098186995              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"PAINTBRUSH\",\"countryCode\":\"CA\",\"provinceCode\":\"MB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"PRESSUREWASHER\",\"countryCode\":\"CA\",\"postalCode\":\"S0K2L0\",\"provinceCode\":\"SK\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "bf57b598-302e-33f3-9e39-26a7bf3959cd",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AF\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1509\",\"timeCode\":\"CS\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098186995              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"PAINTBRUSH\",\"countryCode\":\"CA\",\"provinceCode\":\"MB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"PRESSUREWASHER\",\"countryCode\":\"CA\",\"postalCode\":\"S0K2L0\",\"provinceCode\":\"SK\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000008\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000008\"}}",
+		"RawRecordHash": "45e9e600-9f9e-3f4c-b09e-474446327912",
 		"TransformedRecord": {
 			"dest": {
 				"city": "PRESSUREWASHER",
@@ -208,8 +208,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AF\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1125\",\"timeCode\":\"MT\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638151403540              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"LASERLEVEL\",\"countryCode\":\"CA\",\"provinceCode\":\"AB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"postalCode\":\"N5Y5W3\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "4f8ec0af-69e5-391d-8e39-17a33b1f8b40",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AF\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1125\",\"timeCode\":\"MT\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638151403540              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"LASERLEVEL\",\"countryCode\":\"CA\",\"provinceCode\":\"AB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"postalCode\":\"N5Y5W3\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000009\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000009\"}}",
+		"RawRecordHash": "d8054bd3-a77f-3470-8e67-3e15d9c2ca91",
 		"TransformedRecord": {
 			"dest": {
 				"city": "WRENCH",
@@ -234,8 +234,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"XB\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"0853\",\"timeCode\":\"MT\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638151403540              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"LASERLEVEL\",\"countryCode\":\"CA\",\"provinceCode\":\"AB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"postalCode\":\"N5Y5W3\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "25d44231-6938-302b-8f79-a045f68d3180",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"XB\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"0853\",\"timeCode\":\"MT\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638151403540              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"LASERLEVEL\",\"countryCode\":\"CA\",\"provinceCode\":\"AB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"postalCode\":\"N5Y5W3\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000010\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000010\"}}",
+		"RawRecordHash": "8c2c5975-ad85-3ea5-a9f2-0922317a4fbe",
 		"TransformedRecord": {
 			"dest": {
 				"city": "WRENCH",
@@ -260,8 +260,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AF\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"0837\",\"timeCode\":\"MT\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638316026577              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"LASERLEVEL\",\"countryCode\":\"CA\",\"provinceCode\":\"AB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"postalCode\":\"N5Y5W3\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "138fba02-1864-3151-b47e-1d28c8918833",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AF\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"0837\",\"timeCode\":\"MT\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638316026577              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"LASERLEVEL\",\"countryCode\":\"CA\",\"provinceCode\":\"AB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"postalCode\":\"N5Y5W3\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000011\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000011\"}}",
+		"RawRecordHash": "d75d11e7-cdc8-3391-84fa-8aa45b03f7a5",
 		"TransformedRecord": {
 			"dest": {
 				"city": "WRENCH",
@@ -286,8 +286,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AP\",\"shipmentStatusReasonCode\":\"AG\",\"time\":\"0815\",\"timeCode\":\"MT\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638316026577              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"LASERLEVEL\",\"countryCode\":\"CA\",\"provinceCode\":\"AB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"postalCode\":\"N5Y5W3\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "eb62cafb-3b9e-3e6d-bc53-051e876c7cbc",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AP\",\"shipmentStatusReasonCode\":\"AG\",\"time\":\"0815\",\"timeCode\":\"MT\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638316026577              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"LASERLEVEL\",\"countryCode\":\"CA\",\"provinceCode\":\"AB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"postalCode\":\"N5Y5W3\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000012\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000012\"}}",
+		"RawRecordHash": "761e189f-7c31-3e43-8448-32945d75aeaa",
 		"TransformedRecord": {
 			"dest": {
 				"city": "WRENCH",
@@ -312,8 +312,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191102\",\"shipmentStatusCode\":\"AF\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1555\",\"timeCode\":\"PT\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638316026577              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"NAILGUN\",\"countryCode\":\"CA\",\"provinceCode\":\"BC\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"postalCode\":\"N5Y5W3\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "9741caef-a675-310e-8b7c-f3d20b4e0a22",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191102\",\"shipmentStatusCode\":\"AF\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1555\",\"timeCode\":\"PT\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638316026577              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"NAILGUN\",\"countryCode\":\"CA\",\"provinceCode\":\"BC\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"postalCode\":\"N5Y5W3\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000013\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000013\"}}",
+		"RawRecordHash": "eba97723-1afe-3f60-8a05-42de026e140e",
 		"TransformedRecord": {
 			"dest": {
 				"city": "WRENCH",
@@ -338,8 +338,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AP\",\"shipmentStatusReasonCode\":\"AG\",\"time\":\"0733\",\"timeCode\":\"CS\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638672340607              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"PAINTBRUSH\",\"countryCode\":\"CA\",\"provinceCode\":\"MB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"postalCode\":\"N5Y5W3\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "40467775-2a46-31e4-aa49-170ed446ac1a",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AP\",\"shipmentStatusReasonCode\":\"AG\",\"time\":\"0733\",\"timeCode\":\"CS\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638672340607              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"PAINTBRUSH\",\"countryCode\":\"CA\",\"provinceCode\":\"MB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"postalCode\":\"N5Y5W3\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000014\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000014\"}}",
+		"RawRecordHash": "9aec85ce-e6b9-3798-9b92-49567e76e00f",
 		"TransformedRecord": {
 			"dest": {
 				"city": "WRENCH",
@@ -364,8 +364,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"XB\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"0904\",\"timeCode\":\"MT\"},\"AT8\":{\"weight\":\"16\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098171441              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"LASERLEVEL\",\"countryCode\":\"CA\",\"provinceCode\":\"AB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WOODGLUE\",\"countryCode\":\"CA\",\"postalCode\":\"T0K2E0\",\"provinceCode\":\"AB\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "92968416-9426-3c64-8aa6-841aeb7a2220",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"XB\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"0904\",\"timeCode\":\"MT\"},\"AT8\":{\"weight\":\"16\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098171441              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"LASERLEVEL\",\"countryCode\":\"CA\",\"provinceCode\":\"AB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WOODGLUE\",\"countryCode\":\"CA\",\"postalCode\":\"T0K2E0\",\"provinceCode\":\"AB\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000015\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000015\"}}",
+		"RawRecordHash": "94a6eba8-1430-33c9-b1c7-4a492cc4913f",
 		"TransformedRecord": {
 			"dest": {
 				"city": "WOODGLUE",
@@ -390,8 +390,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AF\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1509\",\"timeCode\":\"CS\"},\"AT8\":{\"weight\":\"3\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098171472              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"PAINTBRUSH\",\"countryCode\":\"CA\",\"provinceCode\":\"MB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"DRYWALL\",\"countryCode\":\"CA\",\"postalCode\":\"S0L0P0\",\"provinceCode\":\"SK\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "938bc223-7399-34a8-96da-c2a8a3f5481d",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AF\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1509\",\"timeCode\":\"CS\"},\"AT8\":{\"weight\":\"3\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098171472              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"PAINTBRUSH\",\"countryCode\":\"CA\",\"provinceCode\":\"MB\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"DRYWALL\",\"countryCode\":\"CA\",\"postalCode\":\"S0L0P0\",\"provinceCode\":\"SK\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000016\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000016\"}}",
+		"RawRecordHash": "e6beafac-5905-3e5b-8833-1c912919a695",
 		"TransformedRecord": {
 			"dest": {
 				"city": "DRYWALL",
@@ -416,8 +416,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AP\",\"shipmentStatusReasonCode\":\"AG\",\"time\":\"0631\",\"timeCode\":\"CS\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098176088              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"SHEETROCK\",\"countryCode\":\"CA\",\"provinceCode\":\"SK\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"FUSE\",\"countryCode\":\"CA\",\"postalCode\":\"S0C1S0\",\"provinceCode\":\"SK\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "00c5d300-6e5e-3310-a138-cc8480d96da5",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"AP\",\"shipmentStatusReasonCode\":\"AG\",\"time\":\"0631\",\"timeCode\":\"CS\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098176088              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"SHEETROCK\",\"countryCode\":\"CA\",\"provinceCode\":\"SK\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"FUSE\",\"countryCode\":\"CA\",\"postalCode\":\"S0C1S0\",\"provinceCode\":\"SK\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000017\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000017\"}}",
+		"RawRecordHash": "b5b1538f-f1dd-33c8-86e8-dcb22dfde7aa",
 		"TransformedRecord": {
 			"dest": {
 				"city": "FUSE",
@@ -442,8 +442,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"XB\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1728\",\"timeCode\":\"ET\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638458862606              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"PVCPIPE\",\"countryCode\":\"CA\",\"provinceCode\":\"ON\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"postalCode\":\"N5Y5W3\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "0e932a2f-c9f8-32b7-921d-73fafac678ec",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"XB\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1728\",\"timeCode\":\"ET\"},\"AT8\":{\"weight\":\"0\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638458862606              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"PVCPIPE\",\"countryCode\":\"CA\",\"provinceCode\":\"ON\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WRENCH\",\"countryCode\":\"CA\",\"postalCode\":\"N5Y5W3\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000018\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000018\"}}",
+		"RawRecordHash": "1d10ef58-fe48-3b4e-987f-ebf54c1c6879",
 		"TransformedRecord": {
 			"dest": {
 				"city": "WRENCH",
@@ -468,8 +468,8 @@
 		}
 	},
 	{
-		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"XB\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1618\",\"timeCode\":\"ET\"},\"AT8\":{\"weight\":\"1\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098196574              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"TORCH\",\"countryCode\":\"CA\",\"provinceCode\":\"ON\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WIRECUTTER\",\"countryCode\":\"CA\",\"postalCode\":\"P0P1S0\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{}}",
-		"RawRecordHash": "9e16b917-d833-3a7f-acc6-4ac5539fd409",
+		"RawRecord": "{\"AT7\":{\"date\":\"20191103\",\"shipmentStatusCode\":\"XB\",\"shipmentStatusReasonCode\":\"NS\",\"time\":\"1618\",\"timeCode\":\"ET\"},\"AT8\":{\"weight\":\"1\",\"weightUOM\":\"K\"},\"B10\":{\"shipmentIdentificationNumber\":\"4343638098196574              \"},\"L11\":[{},{}],\"LX\":{},\"MS1\":{\"cityName\":\"TORCH\",\"countryCode\":\"CA\",\"provinceCode\":\"ON\"},\"N1\":[{},{}],\"N3\":{},\"N4\":{\"cityName\":\"WIRECUTTER\",\"countryCode\":\"CA\",\"postalCode\":\"P0P1S0\",\"provinceCode\":\"ON\"},\"SE\":{},\"ST\":{},\"__envelope\":{\"group\":{\"control_number\":\"000001644\",\"date\":\"20191103\",\"time\":\"1800\"},\"interchange\":{\"control_number\":\"000001644\",\"date\":\"191103\",\"time\":\"1800\"},\"partner\":{\"receiver_id\":\"00602679321\",\"receiver_qualifier\":\"ZZ\",\"sender_id\":\"CPC\",\"sender_qualifier\":\"02\"},\"partner_id\":\"sender=02:CPC|receiver=ZZ:00602679321\",\"transaction\":{\"control_number\":\"000000019\",\"type\":\"214\"},\"transaction_id\":\"isa=000001644@191103T1800|gs=000001644@20191103T1800|st=214:000000019\"}}",
+		"RawRecordHash": "075302f4-6402-3dc7-aefa-cf70574b0e15",
 		"TransformedRecord": {
 			"dest": {
 				"city": "WIRECUTTER",
